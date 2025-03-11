@@ -1,0 +1,18 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: server-1
+
+ignite:
+  cluster:
+    name: ignite-cluster
+  tcp:
+    # NOTE: ???? private ip? ??, ??? ??? ?? ????
+    multicastAddresses: 172.0.17.24:47500..47509, 172.0.17.140:47500..47509
+  queue:
+    parallelJobsNumber: 5
+    priorityAttributeKey: "grid.task.priority"
+    jobPriorityAttributeKey: "grid.job.priority"
+    defaultPriority: 10

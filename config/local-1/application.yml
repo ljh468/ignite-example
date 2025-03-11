@@ -1,0 +1,12 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: server-1
+
+ignite:
+  cluster:
+    name: ignite-cluster
+  tcp:
+    multicastAddresses: 172.0.17.24:47500..47509, 172.0.17.140:47500..47509

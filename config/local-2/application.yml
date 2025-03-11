@@ -1,0 +1,13 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: server-2
+
+ignite:
+  cluster:
+    name: ignite-cluster
+  tcp:
+    # NOTE: 인스턴스 private ip로 설정, 주키퍼 사용시 추가 세팅필요
+    multicastAddresses: 172.0.17.24:47500..47509, 172.0.17.140:47500..47509
